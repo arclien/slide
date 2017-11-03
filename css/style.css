@@ -1,0 +1,91 @@
+html, body {overflow: hidden;}
+
+#slide_box {
+    margin-top:0px;
+    margin-left:0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+#slide_box .slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+#slide_box li{
+    float: left;
+    width: 100%;
+    height: 100%;
+    border:0px solid gray;
+}
+#slide_box .s1 {
+    background-color: orange; 
+}
+#slide_box .s2 {
+    background-color: burlywood; 
+/*    left:100%;*/
+}
+#slide_box .s3 {
+    background-color: crimson;
+/*    left:200%;*/
+}
+#slide_box .s4 {
+    background-color: aqua;
+/*    left:300%;*/
+}
+#slide_box .s5 {
+    background-color: darkgreen;
+/*    left:400%;*/
+}
+#slide_box p.slide_nav {
+    position: absolute;
+    bottom:10px;
+    left:0;
+    width:100%;
+    text-align: center;
+    z-index: 10;
+}
+#slide_box p.slide_nav a{
+    display: inline-block;
+    width: 12px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding:1px 4px;
+    text-indent: -999999em
+}
+#slide_box p.slide_nav a.on{
+    color:deeppink;
+    background: #fff;
+}
+#slide_box .arrow_prev{
+    position: absolute;
+    top:50%;
+    left:0;
+    margin-top:-24px; 
+}
+#slide_box .arrow_prev a{
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(../img/arrow_left.png) no-repeat 0 0;
+    background-size:100%;
+    text-indent: -99999em;
+}
+#slide_box .arrow_next {
+    position: absolute;
+    top:50%;
+    right: 0;
+    margin-top: -24px;
+}
+#slide_box .arrow_next a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(../img/arrow_right.png) no-repeat 0 0;
+    background-size:100%;
+    text-indent: -99999em; 
+}
